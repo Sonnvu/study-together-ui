@@ -1,5 +1,9 @@
 import RoomPage from "@/components/pages/room/RoomPage";
 
-export default function Page({ params }: { params: { id: string } }) {
+type PageProps = {
+  params: { id: string };
+};
+
+export default function Page({ params }: PageProps) {
   return <RoomPage id={params.id} />;
 }
