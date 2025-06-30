@@ -10,7 +10,7 @@ export default function HomePage() {
     const handleJoinRoom = () => {
         const roomId = uuidv4()
         console.log(roomId)
-        router.push('/room/${roomId}');
+        router.push(`/room/${roomId}`);
     }
 
     return (
